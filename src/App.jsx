@@ -97,7 +97,9 @@ export default function App(){
           <div className="birthday">Happy Birthday Kayley — enjoy your birthday!</div>
           <div style={{marginTop:12}}>Enjoy this special surprise:</div>
           <div style={{marginTop:16}}>
-            <iframe id="rick" width="560" height="315" src={rickEmbed} title="Rickroll" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen style={{maxWidth:'100%',height:315,borderRadius:10,marginTop:12}}></iframe>
+            {rickSrc ? (
+              <iframe id="rick" width="560" height="315" src={rickSrc} title="Rickroll" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen style={{maxWidth:'100%',height:315,borderRadius:10,marginTop:12}}></iframe>
+            ) : null}
           </div>
         </div>
       )}
